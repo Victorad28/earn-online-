@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <header class="luxury-header">
         <div class="logo-container">
-            <img src="assets/images/logo.png" alt="VikkaHub Logo" class="logo">
             <span class="logo-text">VIKKAHUB</span>
         </div>
         <div class="timer-container">
@@ -26,6 +33,10 @@
 
     <section class="hero">
         <div class="hero-content">
+            <div class="author-bio">
+                <div class="author-image"></div>
+                <p class="bio-text">Hi, I'm Victor, a digital marketer from Nigeria and founder of VikkaHub. I help students, moms, and job seekers optimize their skills and earn passive income online.</p>
+            </div>
             <h1>How I Made <span class="highlight">$27,834</span> from One eBook in 30 Days <span class="highlight">– And How You Can Too</span> <span class="free-badge">(Free for 48 Hours)</span></h1>
             <h2>The Forbidden "Shadow Traffic" Method Top Marketers Don't Want You To Know</h2>
             <div class="cta-container">
@@ -45,7 +56,6 @@
             <p class="luxury-text">I was there too. Lost money. Wasted time. Nearly gave up...</p>
             
             <div class="image-placeholder">
-                <!-- Image will be placed here -->
                 <img src="assets/images/results-image.jpg" alt="Before and After Results" class="content-image">
             </div>
 
@@ -99,8 +109,7 @@
             <h2>What's Inside Your Free eBook?</h2>
             
             <div class="ebook-image-placeholder">
-                <!-- 3D eBook image will be placed here -->
-                <img src="assets/images/blueprint-image.jpg" alt="eBook Blueprint" class="content-image">
+                <img src="assets/images/ebook-3d.png" alt="eBook Blueprint" class="content-image">
             </div>
             
             <ul class="luxury-list">
@@ -126,7 +135,6 @@
             
             <div class="no-bs-box">
                 <p><strong>No upsells. No BS. Just results.</strong></p>
-                <!-- Image placeholder -->
                 <img src="assets/images/shadow-traffic.jpg" alt="No Upsells Guarantee" class="content-image">
             </div>
         </div>
@@ -152,6 +160,18 @@
                     <p class="testimonial-author">- Jessica L.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="email-optin">
+        <div class="section-container">
+            <h2>Get The eBook Via Email</h2>
+            <form id="emailForm" class="luxury-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Best Email" required>
+                <button type="submit" class="cta-button">SEND ME THE EBOOK</button>
+            </form>
+            <p class="disclaimer">We respect your privacy. Unsubscribe at any time.</p>
         </div>
     </section>
 
@@ -195,7 +215,6 @@
     <footer class="luxury-footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="assets/images/logo.png" alt="VikkaHub Logo" class="logo">
                 <span class="logo-text">VIKKAHUB</span>
             </div>
             <div class="footer-links">
@@ -211,4 +230,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
