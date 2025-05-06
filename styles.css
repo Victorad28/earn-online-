@@ -34,6 +34,14 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
 }
 
+/* Image Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
 /* Header */
 .luxury-header {
     display: flex;
@@ -91,6 +99,7 @@ h1, h2, h3, h4 {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/header-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -119,9 +128,10 @@ h1, h2, h3, h4 {
 }
 
 .author-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    object-fit: cover;
     background-color: var(--secondary-color);
     margin-right: 2rem;
     border: 3px solid var(--accent-color);
@@ -294,6 +304,13 @@ h2::after {
     color: var(--secondary-color);
 }
 
+.step-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
 .step h3 {
     margin-bottom: 1.5rem;
     color: var(--secondary-color);
@@ -399,8 +416,8 @@ h2::after {
 }
 
 .testimonial-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -415,6 +432,16 @@ h2::after {
 .testimonial-author {
     font-weight: 600;
     color: var(--secondary-color);
+}
+
+/* eBook Cover */
+.ebook-cover {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -437,6 +464,8 @@ h2::after {
     }
     
     .author-image {
+        width: 100px;
+        height: 100px;
         margin-right: 0;
         margin-bottom: 1.5rem;
     }
@@ -451,6 +480,15 @@ h2::after {
     
     .time-block {
         min-width: 60px;
+    }
+    
+    .testimonial-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .ebook-cover {
+        max-width: 250px;
     }
 }
 
@@ -482,5 +520,14 @@ h2::after {
     
     .time-block span:first-child {
         font-size: 1.8rem;
+    }
+    
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .ebook-cover {
+        max-width: 200px;
     }
 }
