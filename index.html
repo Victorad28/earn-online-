@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZHHED69VY"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4ZHHED69VY');
     </script>
 </head>
 <body>
@@ -25,6 +25,7 @@
         </div>
         <div class="timer-container">
             <div class="timer-box">
+                <img src="assets/images/clock-icon.png" alt="Timer" class="clock-icon">
                 <span id="hours">48</span>
                 <span>HOURS LEFT</span>
             </div>
@@ -145,19 +146,19 @@
             <h2>What Others Are Saying</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
-                    <img src="assets/images/testimonial1.jpg" alt="Testimonial 1" class="testimonial-image">
+                    <img src="assets/images/testimonial1.jpg" alt="Patience Adie" class="testimonial-image">
                     <p class="testimonial-text">"This blueprint changed everything for me. Made my first $1,000 in just 2 weeks!"</p>
-                    <p class="testimonial-author">- Sarah K.</p>
+                    <p class="testimonial-author">- Patience Adie, Abuja</p>
                 </div>
                 <div class="testimonial-card">
-                    <img src="assets/images/testimonial2.jpg" alt="Testimonial 2" class="testimonial-image">
+                    <img src="assets/images/testimonial2.jpg" alt="Paul Sam" class="testimonial-image">
                     <p class="testimonial-text">"I was skeptical but the Shadow Traffic method actually works. $3,200 last month!"</p>
-                    <p class="testimonial-author">- Michael T.</p>
+                    <p class="testimonial-author">- Paul Sam, Lagos</p>
                 </div>
                 <div class="testimonial-card">
-                    <img src="assets/images/testimonial3.jpg" alt="Testimonial 3" class="testimonial-image">
+                    <img src="assets/images/testimonial3.jpg" alt="Christopher Williams" class="testimonial-image">
                     <p class="testimonial-text">"Finally a legit way to make money online without all the hype. Thank you!"</p>
-                    <p class="testimonial-author">- Jessica L.</p>
+                    <p class="testimonial-author">- Christopher Williams, UK</p>
                 </div>
             </div>
         </div>
@@ -167,9 +168,10 @@
         <div class="section-container">
             <h2>Get The eBook Via Email</h2>
             <form id="emailForm" class="luxury-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Best Email" required>
+                <input type="text" placeholder="Your Name" required pattern=".{3,}" title="Please enter at least 3 characters">
+                <input type="email" placeholder="Your Best Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email">
                 <button type="submit" class="cta-button">SEND ME THE EBOOK</button>
+                <div class="form-error" id="emailError"></div>
             </form>
             <p class="disclaimer">We respect your privacy. Unsubscribe at any time.</p>
         </div>
@@ -230,4 +232,4 @@
 
     <script src="script.js"></script>
 </body>
-    </html>
+</html>
