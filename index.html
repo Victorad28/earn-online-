@@ -20,18 +20,19 @@
 </head>
 <body>
     <header class="luxury-header">
+    <a href="/" class="logo-link">  <!-- Wrap in link for better UX -->
         <div class="logo-container">
-            <div class="logo-box">
-                <img src="assets/images/logo.png" alt="logo" class="logo">
+            <img 
+                src="assets/images/logo.png" 
+                alt="logo" 
+                class="logo"
+                width="48" 
+                height="48"  <!-- Explicit dimensions prevent layout shifts -->
+            >
             <span class="logo-text">VIKKAHUB</span>
         </div>
-        <div class="timer-container">
-            <div class="timer-box">
-                <img src="assets/images/clock-icon.png" alt="Timer" class="clock-icon">
-                <span id="hours">48</span>
-                <span>HOURS LEFT</span>
-            </div>
-        </div>
+    </a>
+
     </header>
 
     <section class="hero">
