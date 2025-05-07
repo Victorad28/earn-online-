@@ -352,6 +352,61 @@ h2::after {
     text-align: left;
 }
 
+/* Logo Styles */
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color); /* Gold border */
+    padding: 3px;
+    background: var(--accent-color); /* White background */
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+/* Hover Effects */
+.logo-link:hover .logo {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.logo-link:hover .logo-text {
+    color: var(--secondary-color); /* Gold text on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
 /* Clock-style Timer */
 .countdown-container {
     margin: 2rem auto;
