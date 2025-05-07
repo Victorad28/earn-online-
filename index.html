@@ -46,12 +46,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1 style="
-            margin-top: 0;
-            position: relative;
-            top: 480px; /* 👈 Moves ONLY this element down */
-            margin-bottom: 500px; /* Compensates for the movement */
-        ">
+            <h1 class="mobile-subject-line>
                 How I Made <span class="highlight">$27,834</span> from One eBook in 30 Days <span class="highlight">– And How You Can Too</span> <span class="free-badge">(Free for 48 Hours)</span></h1>
             <h2>The Forbidden "Shadow Traffic" Method Top Marketers Don't Want You To Know</h2>
             <div class="cta-container">
@@ -64,6 +59,29 @@
             </div>
         </div>
     </section>
+
+    <style>
+/* 👇 MOBILE-ONLY ADJUSTMENTS 👇 */
+@media (max-width: 768px) {
+    /* Moves subject line down */
+    .mobile-subject-line {
+        margin-top: 30px !important;
+        padding-top: 15px !important;
+    }
+
+    /* Adjusts author bio spacing */
+    .mobile-author-bio {
+        margin-top: 40px !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* Fixes text wrapping */
+    .hero h1, .hero h2 {
+        word-break: keep-all;
+        hyphens: none;
+    }
+}
+    </style>
 
     <section class="pain-points">
         <div class="section-container">
