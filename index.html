@@ -61,26 +61,32 @@
     </section>
 
     <style>
-/* 👇 MOBILE-ONLY ADJUSTMENTS 👇 */
-@media (max-width: 768px) {
-    /* Moves subject line down */
-    .mobile-subject-line {
-        margin-top: 500px !important;
-        padding-top: 480px !important;
+  /* MOBILE-ONLY FIXES (under 768px) */
+  @media (max-width: 768px) {
+    /* Moves "Free for 48 Hours" down */
+    .free-badge {
+      display: block;
+      margin-top: 15px !important;
+      margin-left: 0 !important;
     }
-
-    /* Adjusts author bio spacing */
-    .mobile-author-bio {
-        margin-top: 400px !important;
-        margin-bottom: 400px !important;
+    
+    /* Adds space above the headline */
+    .hero h1 {
+      padding-top: 500px !important;
     }
-
-    /* Fixes text wrapping */
-    .hero h1, .hero h2 {
-        word-break: keep-all;
-        hyphens: none;
+    
+    /* Fixes spacing around CTA button */
+    .cta-container {
+      margin: 25px 0 !important;
     }
-}
+    
+    /* Author bio spacing */
+    .author-bio {
+      margin-top: 300px !important;
+      padding-top: 150px !important;
+      border-top: 10px solid rgba(212, 175, 55, 0.3); /* Optional divider */
+    }
+  }
     </style>
 
     <section class="pain-points">
