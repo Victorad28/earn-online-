@@ -87,7 +87,7 @@ img {
 .timer-box span:first-child {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--secondary-color) !important;
+    color: #D4AF37;
 }
 
 .timer-box span:last-child {
