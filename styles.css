@@ -61,7 +61,8 @@ img {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--primary-color);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    position: relative;
 }
 
 .timer-container {
@@ -375,15 +376,6 @@ h2::after {
     background: var(--accent-color); /* White background */
     box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.logo-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    letter-spacing: 0.5px;
-    position: relative;
 }
 
 /* Hover Effects */
