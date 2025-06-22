@@ -25,7 +25,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
-    background-color: var(--accent-color);
+    background: url('assets/images/your-background.jpg') no-repeat center center/cover;
+background-attachment: fixed;
 }
 
 h1, h2, h3, h4 {
