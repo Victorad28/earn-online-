@@ -92,7 +92,7 @@ img {
 }
 
 .timer-box span:last-child {
-    font-size: 0.3rem;
+    font-size: 0.6rem;
     color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 1px;
