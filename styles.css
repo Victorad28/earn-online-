@@ -76,7 +76,7 @@ img {
 .timer-box {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.3rem;
 }
 
 .clock-icon {
@@ -86,7 +86,7 @@ img {
 }
 
 .timer-box span:first-child {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #D4AF37;
 }
