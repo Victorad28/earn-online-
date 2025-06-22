@@ -86,13 +86,13 @@ img {
 }
 
 .timer-box span:first-child {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     font-weight: 700;
     color: #D4AF37;
 }
 
 .timer-box span:last-child {
-    font-size: 0.8rem;
+    font-size: 0.3rem;
     color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 1px;
