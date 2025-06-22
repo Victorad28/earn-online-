@@ -48,7 +48,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5%;
+    padding: 0.3rem 5%;
     background-color: var(--accent-color);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -59,7 +59,7 @@ img {
 
 .logo-text {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 0.6rem;
     font-weight: 700;
     color: var(--primary-color);
     letter-spacing: 0.5px;
