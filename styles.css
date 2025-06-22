@@ -25,7 +25,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
-    background: url('assets/images/your-background.jpg') no-repeat center center/cover;
+    background: url('assets/images/background.jpg') no-repeat center center/cover;
 background-attachment: fixed;
 }
 
@@ -100,7 +100,7 @@ img {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/header-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/color.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     height: 100vh;
     display: flex;
