@@ -60,7 +60,7 @@ img {
 .logo-text {
     font-family: 'Playfair Display', serif;
     font-size: 0.3rem;
-    font-weight: 700;
+    font-weight: 300;
     color: var(--primary-color);
     letter-spacing: 0.5px;
     position: relative;
@@ -68,7 +68,7 @@ img {
 
 .timer-container {
     background-color: var(--primary-color);
-    padding: 0.5rem 0.5rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 5px;
     border: var(--gold-border);
 }
@@ -76,7 +76,7 @@ img {
 .timer-box {
     display: flex;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.5rem;
 }
 
 .clock-icon {
