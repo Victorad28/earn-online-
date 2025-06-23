@@ -227,14 +227,15 @@ img {
   border-radius: 12px;
   background: linear-gradient(
     45deg,
-    #FFD700,  /* Vibrant */
-    #E6C200,  /* Lemon */
-    #D4AF37,  /* Metallic */
-    #C5A942,  /* Antique */
-    #CFB53B,  /* Old */
-    #B8860B,  /* Goldenrod */
-    #F5D76E,  /* Champagne */
-    #F0E68C   /* Khaki */
+    #B8860B,
+    #D4AF37,
+    #F5D76E,
+    #B8860B,
+    #D4AF37,
+    #F5D76E,
+    #B8860B,
+    #D4AF37,
+    #F5D76E
   );
   background-size: 400%;
   animation: glowPulse 8s linear infinite;
