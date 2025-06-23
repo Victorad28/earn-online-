@@ -240,65 +240,56 @@ img {
   background-color: transparent;
   left: 0;
   top: 0;
-  border-radius: 12px; /* Added to match the button's border radius */
-}
 
-/* Constant glow layer */
-.btn::before {
-  content: "";
+/* Glowing button */
+.btn {
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
   background: linear-gradient(
     45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
   );
-  position: absolute;
-  top: -2px;
-  left: -2px;
   background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  border-radius: 12px; /* Ensures the glow matches the button's rounded corners */
-  opacity: 1;
+  animation: glow-move 8s linear infinite;
   box-shadow: 
-    0 0 10px #FF0000,
-    0 0 20px #FF7300,
-    0 0 30px #FFFB00;
+    0 0 20px rgba(255, 0, 0, 0.8),
+    0 0 40px rgba(255, 115, 0, 0.8),
+    0 0 60px rgba(0, 255, 213, 0.8);
+  transition: transform 0.2s ease-in-out;
 }
 
-/* Glowing animation */
-@keyframes glowing {
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Animation for glowing gradient movement */
+@keyframes glow-move {
   0% {
-    background-position: 0 0;
-    box-shadow: 
-      0 0 10px #FF0000,
-      0 0 20px #FF7300,
-      0 0 30px #FFFB00;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 400% 0;
-    box-shadow: 
-      0 0 20px #00FFD5,
-      0 0 30px #002BFF,
-      0 0 40px #FF00C8;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0 0;
-    box-shadow: 
-      0 0 10px #FF0000,
-      0 0 20px #FF7300,
-      0 0 30px #FFFB00;
+    background-position: 0% 50%;
   }
-}
-
-/* Active state (optional) */
-.btn:active {
-  transform: scale(0.98); /* Slight scale down on click */
-  box-shadow: none; /* Remove glow when active */
-}
-
+    }
+    
     
 /* Sections */
 .section-container {
