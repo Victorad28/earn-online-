@@ -244,7 +244,14 @@ img {
     bottom: 0;
     background: linear-gradient(
         45deg,
-        #FFD700, #D4AF37, #F5D76E, #FFDF00, #CFB53B, #C5A942, #F0E68C, #D4AF37 
+        #FFD700, #D4AF37, #F5D76E, #FFDF00, 
+        #CFB53B, #C5A942, #F0E68C, #D4AF37, 
+        #FFD700, #D4AF37, #F5D76E, #FFDF00,
+        #CFB53B, #C5A942, #F0E68C, #D4AF37, 
+        #FFD700, #D4AF37, #F5D76E, #FFDF00,
+        #CFB53B, #C5A942, #F0E68C, #D4AF37, 
+        #FFD700, #D4AF37, #F5D76E, #FFDF00,
+        #CFB53B, #C5A942, #F0E68C, #D4AF37 
     );
     background-size: 400%;
     z-index: -1;
