@@ -138,7 +138,7 @@ img {
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/bl.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    height: 93vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     color: var(--accent-color);
@@ -214,101 +214,93 @@ img {
     margin-left: 10px;
 }
 
-
-/* Button with constant glow effect */
+/* ===== FULL-BODY GLOWING GOLD BUTTON ===== */
 .btn {
-  margin: 20px; /* Adjusted margin for better spacing */
-  padding: 15px 40px;
-  border: none;
-  outline: none;
-  color: #FFF;
-  cursor: pointer;
-  position: relative;
+    /* Core Button Styles */
+    display: inline-block;
+    margin: 20px auto;
+    padding: 16px 45px;
+    border: none;
+    outline: none;
+    color: #000 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: visible;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
-/* Button with constant glow effect */
-.btn {
-  margin: 20px; /* Adjusted margin for better spacing */
-  padding: 15px 40px;
-  border: none;
-  outline: none;
-  color: #FFF;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 12px;
-  background-color: #111; /* Optional: dark background for the button */
-  overflow: hidden; /* Ensure the glow is contained inside the button */
+    /* Gold Gradient Base */
+    background: linear-gradient(
+        135deg,
+        #FFD700 10%,
+        #D4AF37 30%,
+        #F5D76E 50%,
+        #D4AF37 70%,
+        #FFD700 90%
+    );
+    background-size: 250% 250%;
+    animation: gold-wave 8s ease infinite;
+
+    /* Glow Effect */
+    box-shadow:
+        0 0 15px rgba(255, 215, 0, 0.7),
+        0 0 30px rgba(212, 175, 55, 0.5),
+        0 0 45px rgba(212, 175, 55, 0.3);
+
+    /* Smooth Transition */
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Base layer (transparent so glow shows through) */
-.btn::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  left: 0;
-  top: 0;
-  border-radius: 12px; /* Added to match the button's border radius */
+/* Animation */
+@keyframes gold-wave {
+    0%, 100% {
+        background-position: 0% 50%;
+        box-shadow:
+            0 0 15px rgba(255, 215, 0, 0.7),
+            0 0 30px rgba(212, 175, 55, 0.5);
+    }
+    50% {
+        background-position: 100% 50%;
+        box-shadow:
+            0 0 25px rgba(255, 215, 0, 0.8),
+            0 0 45px rgba(212, 175, 55, 0.6);
+    }
 }
 
-/* Constant glow layer */
-.btn::before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  border-radius: 12px; /* Ensures the glow matches the button's rounded corners */
-  opacity: 1;
-  box-shadow: 
-    0 0 10px #FF0000,
-    0 0 20px #FF7300,
-    0 0 30px #FFFB00;
+/* Hover State */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.8),
+        0 0 40px rgba(212, 175, 55, 0.6),
+        0 0 60px rgba(212, 175, 55, 0.4);
 }
 
-/* Glowing animation */
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-    box-shadow: 
-      0 0 10px #FF0000,
-      0 0 20px #FF7300,
-      0 0 30px #FFFB00;
-  }
-  50% {
-    background-position: 400% 0;
-    box-shadow: 
-      0 0 20px #00FFD5,
-      0 0 30px #002BFF,
-      0 0 40px #FF00C8;
-  }
-  100% {
-    background-position: 0 0;
-    box-shadow: 
-      0 0 10px #FF0000,
-      0 0 20px #FF7300,
-      0 0 30px #FFFB00;
-  }
-}
-
-/* Active state (optional) */
+/* Active/Pressed State */
 .btn:active {
-  transform: scale(0.98); /* Slight scale down on click */
-  box-shadow: none; /* Remove glow when active */
+    transform: scale(0.97) translateY(1px);
+    animation-duration: 4s;
+    filter: brightness(1.1);
 }
-    
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .btn {
+        padding: 14px 35px;
+        font-size: 1rem;
+        animation-duration: 10s;
+        box-shadow:
+            0 0 10px rgba(255, 215, 0, 0.7),
+            0 0 25px rgba(212, 175, 55, 0.5);
+    }
+    }
+
 /* Sections */
 .section-container {
     max-width: 1200px;
