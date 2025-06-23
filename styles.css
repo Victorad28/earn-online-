@@ -217,7 +217,7 @@ img {
 
 /* Button with constant glow effect */
 .btn {
-  margin: 100px;
+  margin: 20px; /* Adjusted margin for better spacing */
   padding: 15px 40px;
   border: none;
   outline: none;
@@ -226,9 +226,8 @@ img {
   position: relative;
   z-index: 0;
   border-radius: 12px;
-  /* Add glowing border */
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3);
-  background-color: #111; /* Optional: set a dark background */
+  background-color: #111; /* Optional: dark background for the button */
+  overflow: hidden; /* Ensure the glow is contained inside the button */
 }
 
 /* Base layer (transparent so glow shows through) */
@@ -241,7 +240,7 @@ img {
   background-color: transparent;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 12px; /* Added to match the button's border radius */
 }
 
 /* Constant glow layer */
@@ -261,7 +260,7 @@ img {
   height: calc(100% + 4px);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
-  border-radius: 10px;
+  border-radius: 12px; /* Ensures the glow matches the button's rounded corners */
   opacity: 1;
   box-shadow: 
     0 0 10px #FF0000,
@@ -269,7 +268,7 @@ img {
     0 0 30px #FFFB00;
 }
 
-/* Animation */
+/* Glowing animation */
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -296,11 +295,9 @@ img {
 
 /* Active state (optional) */
 .btn:active {
-  transform: scale(0.98);
+  transform: scale(0.98); /* Slight scale down on click */
+  box-shadow: none; /* Remove glow when active */
 }
-.btn:active::after {
-  background: transparent;
-      }         
 
     
 /* Sections */
