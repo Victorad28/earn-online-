@@ -220,7 +220,7 @@ img {
     padding: 15px 40px;
     border: none;
     outline: none;
-    color: #FFF !important;
+    color: #000 !important;
     cursor: pointer;
     position: relative;
     z-index: 1; /* Increased for proper layering */
@@ -244,8 +244,8 @@ img {
     bottom: 0;
     background: linear-gradient(
         45deg,
-        #FF0000, #FF7300, #FFFB00, #48FF00,
-        #00FFD5, #002BFF, #FF00C8, #FF0000
+        #FFD700, #D4AF37, #F5D76E, #FFDF00,
+        #CFB53B, #D4AF37
     );
     background-size: 400%;
     z-index: -1;
