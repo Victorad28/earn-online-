@@ -220,21 +220,21 @@ img {
   padding: 15px 40px;
   border: none;
   outline: none;
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 12px;
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #ff00c8,
-    #ff0000
+    #FFD700,  /* Vibrant */
+    #E6C200,  /* Lemon */
+    #D4AF37,  /* Metallic */
+    #C5A942,  /* Antique */
+    #CFB53B,  /* Old */
+    #B8860B,  /* Goldenrod */
+    #F5D76E,  /* Champagne */
+    #F0E68C   /* Khaki */
   );
   background-size: 400%;
   animation: glowPulse 8s linear infinite;
