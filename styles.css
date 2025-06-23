@@ -214,8 +214,10 @@ img {
     margin-left: 10px;
 }
 
-/* Enhanced Glow Effect - Full Button Illumination */
+
+/* ===== LUXURY GOLD GLOW BUTTON ===== */
 .btn {
+    /* Basic Styles */
     margin: 20px;
     padding: 15px 40px;
     border: none;
@@ -223,79 +225,109 @@ img {
     color: #000 !important;
     cursor: pointer;
     position: relative;
-    z-index: 1; /* Increased for proper layering */
+    z-index: 1;
     border-radius: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: transparent; /* Changed from #333 */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    
+    /* Core Appearance */
+    background: #D4AF37; /* Solid gold fallback */
     overflow: hidden;
-    transition: all 3.1s ease;
+    transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
 
-/* Full-button glow layer (now acts as main background) */
+/* Animated Gold Gradient Layer */
 .btn::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -2px; /* Covers edges */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
     background: linear-gradient(
-        45deg,
-        #FFD700, #D4AF37, #F5D76E, #FFDF00, 
-        #CFB53B, #C5A942, #F0E68C, #D4AF37
+        115deg,
+        #FFD700 0%,
+        #D4AF37 21%,
+        #C5A942 38%,
+        #F5D76E 55%,
+        #F0E68C 72%,
+        #CFB53B 88%,
+        #D4AF37 100%
     );
-    background-size: 400%;
+    background-size: 300% 300%;
     z-index: -1;
-    animation: glowing 20s linear infinite;
-    border-radius: 10px;
+    animation: gold-pulse 9s ease infinite;
+    border-radius: 12px;
+    opacity: 0.98;
 }
 
-/* Light emission effect */
+/* Glow Halo Effect */
 .btn::after {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: inherit;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: linear-gradient(45deg, #FFD700, #D4AF37);
     filter: blur(12px);
     z-index: -2;
-    opacity: 0.8;
-    animation: glowing 8s linear infinite;
-    border-radius: 12px;
+    opacity: 0.7;
+    animation: gold-pulse 9s ease infinite reverse;
+    border-radius: 14px;
 }
 
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-        box-shadow: 
-            0 0 10px rgba(255, 0, 0, 0.7),
-            0 0 20px rgba(255, 115, 0, 0.7);
+/* Keyframes for Smooth Animation */
+@keyframes gold-pulse {
+    0%, 100% {
+        background-position: 0% 50%;
+        opacity: 0.95;
+    }
+    25% {
+        opacity: 1;
     }
     50% {
-        background-position: 400% 0;
-        box-shadow: 
-            0 0 20px rgba(0, 255, 213, 0.7),
-            0 0 30px rgba(0, 43, 255, 0.7);
+        background-position: 100% 50%;
+        opacity: 0.98;
     }
-    100% {
-        background-position: 0 0;
-        box-shadow: 
-            0 0 10px rgba(255, 0, 200, 0.7),
-            0 0 20px rgba(255, 0, 0, 0.7);
+    75% {
+        opacity: 1;
     }
 }
 
-/* Active state */
+/* Active/Pressed State */
 .btn:active {
-    transform: scale(0.98);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: scale(0.97);
+    filter: brightness(1.05);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.6);
+    transition: all 0.2s ease-out;
 }
 
+/* Hover Enhancement */
+.btn:hover {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+    .btn::before {
+        animation-duration: 12s;
+    }
+    .btn::after {
+        filter: blur(8px);
+    }
+        }
+
+    
 /* Sections */
 .section-container {
     max-width: 1200px;
