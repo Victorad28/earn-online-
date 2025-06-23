@@ -138,7 +138,7 @@ img {
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/bl.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    height: 95vh;
+    height: 91vh;
     display: flex;
     align-items: center;
     color: var(--accent-color);
@@ -214,66 +214,88 @@ img {
     margin-left: 10px;
 }
 
-/* ===== YOUR EXACT GLOWING BUTTON CODE ===== */
+/* Enhanced Glow Effect - Full Button Illumination */
 .btn {
-  margin: 20px; /* Reduced from 100px for better spacing */
-  padding: 15px 40px;
-  border: none;
-  outline: none;
-  color: #FFF;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 12px;
-  font-family: 'Montserrat', sans-serif; /* Added to match your theme */
-  font-weight: 700; /* Added to match your theme */
-  text-transform: uppercase; /* Added to match your theme */
+    margin: 20px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF !important; /* Force white text */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* New glow base */
+    background: #333; /* Fallback color */
+    overflow: hidden;
 }
-.btn::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
+
+/* Full-button glow layer */
 .btn::before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  border-radius: 10px;
-  opacity: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    background-size: 400%;
+    z-index: -1;
+    animation: glowing 12s linear infinite;
+    opacity: 0.9; /* Slightly transparent for better visibility */
+    border-radius: 10px;
+}
+
+/* Light emission effect */
+.btn::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: inherit;
+    filter: blur(15px);
+    z-index: -2;
+    opacity: 0.7;
+    animation: glowing 12s linear infinite;
 }
 
 @keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+    0% {
+        background-position: 0 0;
+        box-shadow: 
+            0 0 15px #FF0000, 
+            0 0 25px #FF7300;
+    }
+    50% {
+        background-position: 400% 0;
+        box-shadow: 
+            0 0 25px #00FFD5, 
+            0 0 35px #002BFF;
+    }
+    100% {
+        background-position: 0 0;
+        box-shadow: 
+            0 0 15px #FF0000, 
+            0 0 25px #FF00C8;
+    }
 }
 
-.btn:active:after {
-  background: transparent;
-}
-
+/* Active state */
 .btn:active {
-  color: #000;
-  font-weight: bold;
-}    
+    transform: scale(0.98);
+    color: #000 !important;
+    font-weight: bold;
+}
 
 
 /* Sections */
