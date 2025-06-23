@@ -249,7 +249,7 @@ img {
     );
     background-size: 400%;
     z-index: -1;
-    animation: glowing 8s linear infinite;
+    animation: glowing 20s linear infinite;
     border-radius: 10px;
 }
 
@@ -265,7 +265,7 @@ img {
     filter: blur(12px);
     z-index: -2;
     opacity: 0.8;
-    animation: glowing 1s linear infinite;
+    animation: glowing 8s linear infinite;
     border-radius: 12px;
 }
 
