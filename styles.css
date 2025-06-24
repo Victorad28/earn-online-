@@ -584,6 +584,7 @@ h2::after {
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 2rem;
+        font-width: 100%;
     }
     
     .hero h2 {
