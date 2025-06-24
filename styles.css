@@ -540,7 +540,7 @@ h2::after {
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 3.2rem;
     }
     
     .hero h2 {
@@ -583,8 +583,9 @@ h2::after {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2rem;
-        font-width: 100%;
+        font-size: 3.2rem;
+        font-width: 130px;
+        width: 100%
     }
     
     .hero h2 {
