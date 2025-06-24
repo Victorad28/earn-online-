@@ -540,11 +540,11 @@ h2::after {
     }
     
     .hero h1 {
-        font-size: 2.15rem;
+        font-size: 2.05rem;
     }
     
     .hero h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .author-bio {
@@ -583,11 +583,11 @@ h2::after {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2.15rem;
+        font-size: 2.05rem;
     }
     
     .hero h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .free-badge {
