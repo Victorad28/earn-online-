@@ -541,7 +541,7 @@ h2::after {
     
     .hero h1 {
         font-size: 2.05rem;
-        font-style: serif;
+        font-style: public sans;
     }
     
     .hero h2 {
@@ -585,7 +585,7 @@ h2::after {
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 2.05rem;
-        font-style: serif;
+        font-style: public sans;
     }
     
     .hero h2 {
