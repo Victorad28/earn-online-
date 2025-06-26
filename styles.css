@@ -26,7 +26,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background: url('assets/images/cl.jpg') no-repeat center center/cover;
-background-attachment: fixed;
 }
 
 h1, h2, h3, h4 {
