@@ -137,7 +137,6 @@ img {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/bl.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
     height: 95vh;
     display: flex;
     align-items: center;
