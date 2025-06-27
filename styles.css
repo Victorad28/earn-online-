@@ -188,7 +188,7 @@ img {
     color: var(--accent-color);
     line-height: 1.2;
     width: 100%;
-    font-style: public sans;
+    font-style: Montserrat;
 }
 
 .hero h2 {
@@ -550,7 +550,7 @@ h2::after {
     
     .hero h1 {
         font-size: 2rem;
-        font-style: public sans;
+        font-style: Montserrat;
         width: 100%;
        
     }
@@ -596,7 +596,7 @@ h2::after {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
-        font-style: public sans;
+        font-style: Montserrat;
     }
     
     .hero h2 {
