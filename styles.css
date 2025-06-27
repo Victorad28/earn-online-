@@ -200,10 +200,11 @@ img {
 
 .hero p {
     font-size: 1rem;
-    margin-top: 10rem;
+    margin-top: 40%;
     font-weight: 400;
     font-style: public sans;
     width: 100%;
+    color: var(--secondary-color);
 }
 
 .highlight {
