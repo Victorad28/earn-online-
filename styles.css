@@ -542,15 +542,16 @@ h2::after {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
     html {
         font-size: 16px;
     }
     
     .hero h1 {
-        font-size: 2.05rem;
+        font-size: 2.15rem;
         font-style: public sans;
         width: 100%;
+       
     }
     
     .hero h2 {
@@ -591,9 +592,9 @@ h2::after {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 100%) {
     .hero h1 {
-        font-size: 2.05rem;
+        font-size: 2.15rem;
         font-style: public sans;
     }
     
