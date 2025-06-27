@@ -550,6 +550,7 @@ h2::after {
     .hero h1 {
         font-size: 2.05rem;
         font-style: public sans;
+        width: 100%;
     }
     
     .hero h2 {
