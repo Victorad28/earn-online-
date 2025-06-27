@@ -239,7 +239,7 @@ img {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 90px;
   background: linear-gradient(
     45deg,
     #B8860B,
@@ -295,9 +295,9 @@ img {
     background: #FF0000;
     color: #fff;
     border-radius: 80px;
-    border: 3px solid var(--secondary-color);
+    font-size: 1.5rem;
     width: 49%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .pain-points h2 {
