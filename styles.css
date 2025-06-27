@@ -297,8 +297,8 @@ img {
     border-radius: 80px;
     font-size: 1.2rem;
     width: 49%;
-    padding: 5px;
-    left: 10%;
+    padding: 10px;
+    text-align: center;
 }
 
 .pain-points h2 {
