@@ -343,7 +343,7 @@ h2::after {
     font-size: 2rem;
     position: absolute;
     left: 1rem;
-    top: 0.1rem;
+    top: 0;
 }
 
 /* Process Steps */
