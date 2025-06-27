@@ -86,6 +86,10 @@ img {
     filter: invert(79%) sepia(39%) saturate(668%) hue-rotate(6deg) brightness(89%) contrast(87%);
 }
 
+.clock-icon-img {
+    border: none;
+}
+
 .timer-box span:first-child {
     font-size: 0.7rem;
     font-weight: 700;
