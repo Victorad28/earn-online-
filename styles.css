@@ -204,7 +204,7 @@ img {
     font-weight: 400;
     font-style: public sans;
     width: 100%;
-    color: var(--secondary-color);
+    color: #fff;
 }
 
 .highlight {
