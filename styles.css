@@ -148,7 +148,7 @@ img {
 .hero-content {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
 }
 
 .author-bio {
