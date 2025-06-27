@@ -29,7 +29,7 @@ body {
     background-size: cover;
 }
 
-h2, h3, h4 {
+{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--primary-color);
@@ -195,7 +195,7 @@ img {
 .hero h2 {
     font-size: 1.8rem;
     margin-bottom: 3rem;
-    color: var(--secondary-color);
+    color: fff;
     font-weight: 400;
     font-style: public sans;
 }
@@ -292,14 +292,20 @@ img {
     color: #fff;
     border-radius: 6px;
     border: 3px solid var(--secondary-color);
-    width: 40%;
+    width: 55%;
     padding: 15px;
 }
 
-h2 {
+.pain-points h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     position: relative;
+    font-style: Montserrat;
+}
+
+.paint-points h3 {
+    font-size: 1.3rem;
+    font-style: Montserrat;
 }
 
 h2::after {
