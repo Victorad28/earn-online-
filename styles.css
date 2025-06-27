@@ -196,8 +196,8 @@ img {
     font-size: 1.8rem;
     margin-bottom: 3rem;
     color: fff;
-    font-weight: 400;
-    font-style: public sans;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero p {
