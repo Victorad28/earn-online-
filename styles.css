@@ -334,7 +334,8 @@ h2::after {
     position: relative;
     padding-left: 3rem;
     text-align: left;
-    weight: 600px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 .luxury-list li::before {
@@ -343,7 +344,9 @@ h2::after {
     font-size: 2rem;
     position: absolute;
     left: 1rem;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50);
+    line-height: 1;
 }
 
 /* Process Steps */
