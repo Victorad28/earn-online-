@@ -318,11 +318,12 @@ h2::after {
 }
 
 .luxury-list li {
-    padding: 1rem 0;
-    font-size: 1.2rem;
+    padding: 0.4rem 0;
+    font-size: 1rem;
     position: relative;
     padding-left: 3rem;
     text-align: left;
+    weight: 600px;
 }
 
 .luxury-list li::before {
