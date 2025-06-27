@@ -41,7 +41,7 @@ img {
     height: auto;
     display: block;
     border-radius: 8px;
-    border: 3px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
 }
 
 /* Header */
@@ -239,7 +239,7 @@ img {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 90px;
+  border-radius: 100px;
   background: linear-gradient(
     45deg,
     #B8860B,
@@ -295,9 +295,10 @@ img {
     background: #FF0000;
     color: #fff;
     border-radius: 80px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 49%;
     padding: 5px;
+    left: 10%;
 }
 
 .pain-points h2 {
