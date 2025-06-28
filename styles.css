@@ -38,7 +38,7 @@ body {
 /* Image Responsiveness */
 img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
     border-radius: 8px;
     border: 1.5px solid var(--secondary-color);
@@ -398,12 +398,6 @@ h2::after {
     font-size: 1.8rem;
 }
 
-.content-image {
-    height: 100px;
-}
-
-
-
 /* Email Opt-in */
 .email-optin {
     background-color: var(--gold-light);
@@ -422,7 +416,7 @@ h2::after {
     margin-bottom: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1.1rem;
+    m;
     transition: all 0.3s ease;
 }
 
