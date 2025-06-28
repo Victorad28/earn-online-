@@ -179,6 +179,7 @@ img {
     background-color: var(--secondary-color);
     margin-right: 2rem;
     border: 3px solid var(--accent-color);
+    margin-left: none;
 }
 
 .bio-text {
