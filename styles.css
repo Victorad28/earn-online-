@@ -42,8 +42,6 @@ img {
     display: block;
     border-radius: 8px;
     border: 1.5px solid var(--secondary-color);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Header */
@@ -168,7 +166,6 @@ img {
     margin-bottom: 3rem;
     max-width: 800px;
     margin-left: auto;
-    margin-right: auto;
 }
 
 .author-image {
@@ -178,7 +175,7 @@ img {
     object-fit: cover;
     background-color: var(--secondary-color);
     margin-right: 2rem;
-    border: 3px solid var(--accent-color);
+    border: 2.3px solid var(--accent-color);
     margin-left: none;
 }
 
@@ -375,7 +372,6 @@ h2::after {
     text-align: center;
     transition: all 0.3s ease;
     border: var(--gold-border);
-    width: 100%;
 }
 
 .step:hover {
