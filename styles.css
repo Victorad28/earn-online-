@@ -375,6 +375,7 @@ h2::after {
     text-align: center;
     transition: all 0.3s ease;
     border: var(--gold-border);
+    width: 100%;
 }
 
 .step:hover {
