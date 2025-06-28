@@ -37,7 +37,7 @@ body {
 
 /* Image Responsiveness */
 img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 8px;
