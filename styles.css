@@ -355,21 +355,20 @@ h2::after {
 /* Process Steps */
 .process-steps {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto 4rem;
-    padding: 0 20px;
+    margin: 3rem auto;
 }
 
 .step {
-    flex: 0 1 300px;
-    margin: 1.5rem;
-    padding: 2.5rem;
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    padding: 2rem;
     background-color: var(--accent-color);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    position: relative;
     transition: all 0.3s ease;
     border: var(--gold-border);
 }
