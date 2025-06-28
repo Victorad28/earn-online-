@@ -601,14 +601,6 @@ h2::after {
         flex-direction: column;
     }
     
-    .countdown-timer {
-        gap: 0.5rem;
-    }
-    
-    .time-block {
-        min-width: 60px;
-    }
-    
     .testimonial-image {
         width: 100px;
         height: 100px;
@@ -633,21 +625,6 @@ h2::after {
         display: block;
         margin: 1rem auto 0;
         width: fit-content;
-    }
-    
-    .countdown-timer {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .time-block {
-        flex-direction: row;
-        gap: 0.5rem;
-        align-items: center;
-    }
-    
-    .time-block span:first-child {
-        font-size: 1.8rem;
     }
     
     .testimonial-image {
