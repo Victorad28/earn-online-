@@ -291,6 +291,10 @@ img {
     padding: 2rem 5%;
 }
 
+.section-container h2 {
+    text-align: center;
+}
+
 .pain-points h1 {
     background: #FF0000;
     color: #fff;
