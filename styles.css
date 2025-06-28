@@ -398,6 +398,10 @@ h2::after {
     font-size: 1.8rem;
 }
 
+.image-placeholder img {
+    height: 60%;
+}
+
 /* Email Opt-in */
 .email-optin {
     background-color: var(--gold-light);
