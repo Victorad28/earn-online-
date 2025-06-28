@@ -505,7 +505,7 @@ h2::after {
 }
 
 .time-block span:first-child {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     font-weight: 700;
     display: block;
     color: var(--secondary-color);
