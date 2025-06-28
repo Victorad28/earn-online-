@@ -41,7 +41,7 @@ img {
     height: auto;
     display: block;
     border-radius: 8px;
-    border: 5px solid var(--secondary-color);
+    border: 1.5px solid var(--secondary-color);
     margin-left: auto;
     margin-right: auto;
 }
