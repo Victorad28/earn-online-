@@ -398,6 +398,10 @@ h2::after {
     font-size: 1.8rem;
 }
 
+.content-image {
+    height: 100px;
+}
+
 
 
 /* Email Opt-in */
