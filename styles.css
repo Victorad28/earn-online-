@@ -156,6 +156,7 @@ img {
 
 .testimonials h2 {
     color: #D4AF37;
+    font-size: 1.6rem;
 }
 
 .hero-content {
@@ -558,7 +559,6 @@ h2::after {
     margin: 1rem;
     padding: 1rem;
     positive: relative;
-    border: 2.2px solid var(--secondary-color);
 }
 
 .testimonial-image {
