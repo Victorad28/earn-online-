@@ -558,6 +558,7 @@ h2::after {
     margin: 1rem;
     padding: 1rem;
     positive: relative;
+    border: 2.2px solid var(--secondary-color);
 }
 
 .testimonial-image {
