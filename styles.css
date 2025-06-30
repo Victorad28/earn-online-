@@ -544,6 +544,13 @@ h2::after {
     border: var(--gold-border);
 }
 
+.testimonials {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    positive: relative;
+}
+
 .testimonial-image {
     width: 120px;
     height: 120px;
