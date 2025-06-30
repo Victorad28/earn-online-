@@ -154,6 +154,10 @@ img {
     background: #000;
 }
 
+.testimonials h2 {
+    color: #D4AF37;
+}
+
 .hero-content {
     max-width: 100%;
     margin: 0 auto;
