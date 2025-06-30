@@ -547,7 +547,7 @@ h2::after {
 .testimonial {
     flex: 1;
     min-width: 300px;
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     positive: relative;
 }
